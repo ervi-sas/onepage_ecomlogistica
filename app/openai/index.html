@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07142f">
+    <title>Ervi | Comercialización, logística y recaudo conectados</title>
+    <meta name="description"
+        content="Conecta canales de venta, inventario, distribución, facturación y recaudo con una operación respaldada logísticamente por Almagrario.">
+    <meta property="og:title" content="Del producto listo a una operación que fluye.">
+    <meta property="og:description"
+        content="Comercialización, logística y fulfillment conectados para fabricantes, importadores y negocios multicanal.">
+    <link rel="icon" href="Favicon_ervi_2026.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-shell">
+            <a href="#inicio" class="brand" aria-label="Ervi, inicio">
+                <img src="logo_ervi_web.svg" alt="ERVI" class="brand-logo">
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+                <a href="#soluciones">Soluciones</a>
+                <a href="#proceso">Cómo funciona</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#respaldo">Respaldo</a>
+                <a href="#faq">Preguntas</a>
+                <a href="#contacto" class="nav-mobile-cta">Diseñar mi operación</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="button button-small button-primary" href="#contacto">Diseñar mi operación</a>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav"
+                    aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <!-- HERO -->
+        <section class="hero section-dark" id="inicio">
+            <div class="hero-grid container">
+                <div class="hero-copy">
+                    <p class="eyebrow on-dark"><span class="eyebrow-dot"></span>COMERCIALIZACIÓN · LOGÍSTICA ·
+                        FULFILLMENT</p>
+                    <h1>Tu producto está listo. <span>Hagamos que toda la operación también.</span></h1>
+                    <p class="hero-lead">Ervi conecta venta, inventario, preparación, entrega, facturación y recaudo en
+                        una operación diseñada alrededor de tu negocio. Tú defines el producto y el crecimiento que
+                        buscas; nosotros articulamos el recorrido.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contacto">Diseñar mi operación <span
+                                aria-hidden="true">↗</span></a>
+                        <a class="button button-ghost" href="#proceso">Ver cómo funciona</a>
+                    </div>
+                    <div class="hero-proof">
+                        <div><strong>Respaldo logístico</strong><span>Almagrario</span></div>
+                        <div><strong>+60 años</strong><span>trayectoria del aliado</span></div>
+                        <div><strong>8 ciudades</strong><span>según operación</span></div>
+                    </div>
+                    <p class="micro-note">La trayectoria y la infraestructura logística corresponden a Almagrario. Ervi
+                        desarrolla y articula el modelo comercial y operativo.</p>
+                </div>
+
+                <div class="hero-visual scene" aria-label="Representación visual de una operación Ervi">
+                    <div class="scene-label">REPRESENTACIÓN VISUAL</div>
+                    <svg class="route-art" viewBox="0 0 760 520" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="heroRoute" x1="0" x2="1">
+                                <stop offset="0" stop-color="#3703d6" />
+                                <stop offset="1" stop-color="#04defd" />
+                            </linearGradient>
+                            <filter id="softGlow">
+                                <feGaussianBlur stdDeviation="5" result="b" />
+                                <feMerge>
+                                    <feMergeNode in="b" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path d="M72 150 C180 75, 280 180, 385 145 S570 105, 690 170" class="route route-faint" />
+                        <path d="M72 330 C182 225, 265 342, 382 272 S580 250, 690 340" class="route route-faint" />
+                        <path d="M72 240 C180 140, 270 225, 395 220 S595 170, 690 250" class="route route-main" />
+                        <circle cx="74" cy="240" r="5" class="node node-cyan" />
+                        <circle cx="205" cy="185" r="5" class="node node-purple" />
+                        <circle cx="395" cy="220" r="7" class="node node-active" />
+                        <circle cx="548" cy="186" r="5" class="node node-cyan" />
+                        <circle cx="690" cy="250" r="7" class="node node-green" />
+                        <g class="hero-box" filter="url(#softGlow)">
+                            <rect x="354" y="176" width="82" height="62" rx="4" />
+                            <path d="M354 194 395 213 436 194M395 213v25" />
+                        </g>
+                        <g class="hero-tag">
+                            <rect x="488" y="300" width="160" height="78" rx="10" />
+                            <text x="506" y="322">ORDEN</text>
+                            <text x="506" y="346" class="mono">SKU-042 · LISTO</text>
+                            <circle cx="625" cy="350" r="6" />
+                        </g>
+                        <g class="hero-event">
+                            <circle cx="548" cy="186" r="18" />
+                            <path d="M540 186l6 6 11-13" />
+                        </g>
+                    </svg>
+                    <div class="scene-caption">
+                        <span>VENTA</span><span>INVENTARIO</span><span>DESPACHO</span><span>RECAUDO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMA -->
+        <section class="section light problem-section" id="soluciones">
+            <div class="container">
+                <div class="section-head split-head">
+                    <div>
+                        <p class="eyebrow">EL PROBLEMA</p>
+                        <h2>Vender más no debería obligarte a coordinar más.</h2>
+                    </div>
+                    <p>Un nuevo canal puede traer más pedidos, pero también más inventario que controlar, más entregas
+                        que coordinar y más información que conciliar. Ervi entra donde esa fragmentación empieza a
+                        frenar el crecimiento.</p>
+                </div>
+
+                <div class="problem-scene" id="problemScene">
+                    <div class="problem-source source-one"><span>01</span><strong>QUIERO LLEGAR A MÁS
+                            COMPRADORES</strong>
+                        <p>e-commerce · TAT · nuevos canales</p>
+                    </div>
+                    <div class="problem-source source-two"><span>02</span><strong>NECESITO UNA OPERACIÓN LOCAL</strong>
+                        <p>recibir · almacenar · preparar · entregar</p>
+                    </div>
+                    <div class="problem-source source-three"><span>03</span><strong>MIS CANALES NO ESTÁN
+                            CONECTADOS</strong>
+                        <p>ventas · inventario · entrega · recaudo</p>
+                    </div>
+                    <div class="problem-flow"><span class="line"></span><span class="line"></span><span
+                            class="line"></span></div>
+                    <div class="problem-core"><small>CONEXIÓN</small><strong>ERVI</strong><span>continuidad
+                            operativa</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPUESTA -->
+        <section class="section proposition" id="propuesta">
+            <div class="container">
+                <div class="section-head split-head">
+                    <div>
+                        <p class="eyebrow">LA PROPUESTA</p>
+                        <h2>No agregamos otro proveedor. <span>Conectamos el recorrido.</span></h2>
+                    </div>
+                    <p>Ervi articula tres capacidades que normalmente viven separadas: comercialización, operación
+                        logística y cierre administrativo de la venta.</p>
+                </div>
+
+                <div class="capability-map" id="capabilityMap">
+                    <svg class="capability-lines" viewBox="0 0 1100 320" preserveAspectRatio="none" aria-hidden="true">
+                        <path class="cap-line commercial-line"
+                            d="M100 90 C250 90, 280 145, 430 145 S650 120, 980 120" />
+                        <path class="cap-line logistics-line"
+                            d="M100 160 C290 160, 350 170, 500 170 S740 170, 980 170" />
+                        <path class="cap-line fulfillment-line"
+                            d="M100 245 C300 245, 365 195, 510 195 S760 210, 980 210" />
+                        <circle class="cap-node" cx="980" cy="120" r="7" />
+                        <circle class="cap-node" cx="980" cy="170" r="7" />
+                        <circle class="cap-node" cx="980" cy="210" r="7" />
+                    </svg>
+                    <div class="cap-panel commercial" data-cap="commercial">
+                        <div class="cap-index">01</div>
+                        <p class="cap-kicker">COMERCIALIZACIÓN</p>
+                        <h3>Ponemos tu producto donde puede crecer.</h3>
+                        <p>E-commerce, TAT y catálogo digital alineados con el portafolio y la capacidad de
+                            abastecimiento.</p>
+                        <ul>
+                            <li>Activación de canales</li>
+                            <li>Catálogo y portafolio</li>
+                            <li>Operación e-commerce</li>
+                            <li>Desarrollo TAT</li>
+                        </ul>
+                    </div>
+                    <div class="cap-panel logistics" data-cap="logistics">
+                        <div class="cap-index">02</div>
+                        <p class="cap-kicker">LOGÍSTICA</p>
+                        <h3>Hacemos que el pedido encuentre su camino.</h3>
+                        <p>Recepción, almacenamiento, inventario, alistamiento, despacho, distribución y novedades, con
+                            apoyo logístico de Almagrario según el alcance definido.</p>
+                        <ul>
+                            <li>Recepción y almacenamiento</li>
+                            <li>Control de inventario</li>
+                            <li>Alistamiento y despacho</li>
+                            <li>Distribución y transporte</li>
+                            <li>Apoyo WMS según configuración</li>
+                        </ul>
+                    </div>
+                    <div class="cap-panel fulfillment" data-cap="fulfillment">
+                        <div class="cap-index">03</div>
+                        <p class="cap-kicker">FULFILLMENT</p>
+                        <h3>Cerramos el ciclo de la venta.</h3>
+                        <p>Conectamos facturación, medios de pago, recaudo y conciliación bajo las condiciones acordadas
+                            para cada operación.</p>
+                        <ul>
+                            <li>Facturación</li>
+                            <li>Medios de pago</li>
+                            <li>Recaudo</li>
+                            <li>Conciliación</li>
+                        </ul>
+                    </div>
+                    <div class="route-summary" aria-label="Ruta de valor">
+                        <span>DEMANDA</span><i>→</i><span>PRODUCTO</span><i>→</i><span>PEDIDO</span><i>→</i><span>ENTREGA</span><i>→</i><span>RECAUDO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESO -->
+        <section class="section process section-dark" id="proceso">
+            <div class="container">
+                <div class="section-head split-head on-dark-head">
+                    <div>
+                        <p class="eyebrow on-dark">EL RECORRIDO</p>
+                        <h2>Seis momentos. <span>Una operación conectada.</span></h2>
+                    </div>
+                    <p>Diseñamos el recorrido a partir de tus canales, producto, volumen, ciudades y condiciones
+                        comerciales. Cada etapa tiene responsables y reglas definidos antes de comenzar.</p>
+                </div>
+
+                <div class="process-layout">
+                    <div class="process-route-wrap">
+                        <div class="process-route" id="processRoute">
+                            <div class="route-track"><span class="route-progress"></span></div>
+                            <div class="process-packet" aria-hidden="true">
+                                <div class="mini-box"></div>
+                            </div>
+                            <div class="process-steps">
+                                <article class="process-step active" data-step="0">
+                                    <div class="step-node">01</div>
+                                    <p class="step-title">Vender</p>
+                                    <p>Activamos los canales acordados y llevamos la demanda hacia la operación.</p>
+                                </article>
+                                <article class="process-step" data-step="1">
+                                    <div class="step-node">02</div>
+                                    <p class="step-title">Recibir</p>
+                                    <p>El producto ingresa, se valida y queda listo para ser administrado.</p>
+                                </article>
+                                <article class="process-step" data-step="2">
+                                    <div class="step-node">03</div>
+                                    <p class="step-title">Almacenar</p>
+                                    <p>El inventario se organiza por SKU, lote u otro criterio definido, con apoyo WMS
+                                        cuando corresponda.</p>
+                                </article>
+                                <article class="process-step" data-step="3">
+                                    <div class="step-node">04</div>
+                                    <p class="step-title">Preparar y despachar</p>
+                                    <p>Cada pedido se convierte en una salida lista para el canal y destino
+                                        correspondientes.</p>
+                                </article>
+                                <article class="process-step" data-step="4">
+                                    <div class="step-node">05</div>
+                                    <p class="step-title">Entregar</p>
+                                    <p>Coordinamos distribución, transporte y gestión de novedades según el alcance
+                                        acordado.</p>
+                                </article>
+                                <article class="process-step" data-step="5">
+                                    <div class="step-node">06</div>
+                                    <p class="step-title">Facturar y recaudar</p>
+                                    <p>Cerramos el ciclo con facturación, medios de pago, recaudo y conciliación.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="process-aside">
+                        <p class="eyebrow on-dark">DIAGNÓSTICO</p>
+                        <h3>¿Dónde se rompe hoy tu recorrido?</h3>
+                        <p>Cuéntanos qué parte de la operación te está frenando y revisamos dónde puede entrar Ervi.</p>
+                        <a class="button button-primary" href="#contacto">Solicitar diagnóstico <span>↗</span></a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="section services light" id="servicios">
+            <div class="container">
+                <div class="section-head narrow-head">
+                    <p class="eyebrow">SERVICIOS</p>
+                    <h2>La operación se adapta a tu negocio, <span>no al revés.</span></h2>
+                    <p>No todos los clientes necesitan exactamente el mismo alcance. Definimos qué debe asumir Ervi, qué
+                        soporta el aliado logístico y qué permanece en manos del cliente.</p>
+                </div>
+
+                <div class="service-bands">
+                    <article class="service-band" data-service="commercial">
+                        <div class="service-copy">
+                            <div class="service-number">01</div>
+                            <p class="service-kicker">COMERCIALIZACIÓN</p>
+                            <h3>Más canales sin multiplicar la estructura al mismo ritmo.</h3>
+                            <p>E-commerce, TAT y catálogo digital para ampliar el alcance comercial con una operación
+                                capaz de responder a la demanda.</p>
+                        </div>
+                        <div class="service-scene catalogue-scene" aria-label="Microanimación de catálogo">
+                            <div class="catalog-card c1"></div>
+                            <div class="catalog-card c2"></div>
+                            <div class="catalog-card c3"></div>
+                            <div class="catalog-order">ORDEN +1</div>
+                        </div>
+                    </article>
+                    <article class="service-band" data-service="logistics">
+                        <div class="service-copy">
+                            <div class="service-number">02</div>
+                            <p class="service-kicker">GESTIÓN LOGÍSTICA</p>
+                            <h3>Continuidad entre inventario, pedido y destino.</h3>
+                            <p>Recepción, almacenamiento, inventario, alistamiento, despacho, transporte, entrega y
+                                novedades bajo el alcance acordado.</p>
+                        </div>
+                        <div class="service-scene inventory-scene" aria-label="Microanimación de inventario">
+                            <div class="inventory-grid"></div>
+                            <div class="inventory-box"></div>
+                            <div class="inventory-pin"></div>
+                            <div class="dispatch-line"></div>
+                        </div>
+                    </article>
+                    <article class="service-band" data-service="fulfillment">
+                        <div class="service-copy">
+                            <div class="service-number">03</div>
+                            <p class="service-kicker">FULFILLMENT ADMINISTRATIVO</p>
+                            <h3>Menos puntos de transferencia al cerrar la venta.</h3>
+                            <p>Facturación, pagos, recaudo y conciliación conectados con la operación.</p>
+                        </div>
+                        <div class="service-scene finance-scene" aria-label="Microanimación de conciliación">
+                            <div class="finance-card order">PEDIDO</div>
+                            <div class="finance-arrow a1">→</div>
+                            <div class="finance-card invoice">FACTURA</div>
+                            <div class="finance-arrow a2">→</div>
+                            <div class="finance-card paid">PAGO</div>
+                            <div class="finance-check">✓</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENCAJE -->
+        <section class="section fit-section" id="encaje">
+            <div class="container fit-grid">
+                <div class="fit-copy">
+                    <p class="eyebrow">ENCAJE</p>
+                    <h2>Ervi tiene sentido cuando crecer ya exige <span>otra operación.</span></h2>
+                    <p>El mejor encaje inicial está en repuestos, accesorios, productos de retail y referencias de
+                        inventario general. Otras categorías se revisan según almacenamiento, manipulación, regulación,
+                        rotación y volumen.</p>
+                    <a href="#contacto" class="text-link">Revisar si hay encaje <span>↗</span></a>
+                </div>
+                <div class="fit-diagnostic" id="fitDiagnostic">
+                    <div class="diagnostic-header"><span>¿Tu operación...?</span><span class="mono">CHECK 05</span>
+                    </div>
+                    <label class="check-row"><input type="checkbox" value="1"><span
+                            class="custom-check"></span><span>Tiene varios canales</span></label>
+                    <label class="check-row"><input type="checkbox" value="1"><span
+                            class="custom-check"></span><span>Tiene producto físico</span></label>
+                    <label class="check-row"><input type="checkbox" value="1"><span
+                            class="custom-check"></span><span>Está creciendo</span></label>
+                    <label class="check-row"><input type="checkbox" value="1"><span
+                            class="custom-check"></span><span>Tiene fricción operativa</span></label>
+                    <label class="check-row"><input type="checkbox" value="1"><span
+                            class="custom-check"></span><span>Necesita capacidad local</span></label>
+                    <div class="diagnostic-result" id="diagnosticResult"><small>RESULTADO</small><strong>Selecciona
+                            señales para evaluar el encaje</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPORTADORES -->
+        <section class="section importer section-dark" id="importadores">
+            <div class="container importer-grid">
+                <div>
+                    <p class="eyebrow on-dark">CASO DE USO</p>
+                    <h2>Tu mercancía ya está lista. <span>Ahora necesita una operación local.</span></h2>
+                    <p>Ervi puede articular la entrada de inventario a una operación comercial y logística en Colombia:
+                        recepción, almacenamiento, canales, preparación, facturación, distribución y recaudo según el
+                        alcance acordado.</p>
+                    <div class="benefit-list"><span>Presencia operativa local.</span><span>Menos infraestructura que
+                            construir desde cero.</span><span>Un recorrido conectado entre inventario y
+                            venta.</span><span>Responsabilidades y condiciones definidas antes de iniciar.</span></div>
+                    <div class="importer-actions"><a class="button button-primary" href="#contacto">Diseñar mi operación
+                            en Colombia</a><a class="button button-ghost" href="https://www.ervi.com.co" target="_blank"
+                            rel="noopener noreferrer">Conocer Ervi Importación ↗</a></div>
+                </div>
+                <div class="importer-visual scene" aria-label="Ruta visual de importación">
+                    <div class="origin-line">
+                        <span>ORIGEN</span><i></i><span>RECEPCIÓN</span><i></i><span>INVENTARIO</span><i></i><span>VENTA</span><i></i><span>ENTREGA</span>
+                    </div>
+                    <svg viewBox="0 0 620 340" class="import-route" aria-hidden="true">
+                        <path d="M44 92 C150 30 225 78 302 110 S470 166 575 94" />
+                        <path d="M44 238 C172 176 240 270 340 218 S475 178 575 238" />
+                        <circle cx="44" cy="92" r="6" />
+                        <circle cx="302" cy="110" r="6" />
+                        <circle cx="575" cy="94" r="7" />
+                        <rect class="moving-packet" x="288" y="96" width="28" height="22" rx="3" />
+                    </svg>
+                    <div class="scene-caption">
+                        <span>ORIGEN</span><span>ENTRADA</span><span>OPERACIÓN</span><span>SALIDA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESPALDO -->
+        <section class="section light backup" id="respaldo">
+            <div class="container backup-grid">
+                <div class="backup-copy">
+                    <p class="eyebrow">RESPALDO OPERATIVO</p>
+                    <h2>Una propuesta joven respaldada por una infraestructura con trayectoria.</h2>
+                    <p>Ervi lleva un año desarrollando este modelo y se apoya logísticamente en Almagrario, compañía con
+                        más de 60 años de trayectoria.</p>
+                    <div class="proof-list">
+                        <article><span class="proof-index">01</span>
+                            <div>
+                                <h3>Red logística</h3>
+                                <p>Bogotá, Funza, Cali, Itagüí, Bucaramanga, Barranquilla, Santa Marta y Cartagena.</p>
+                                <small>La cobertura efectiva se define según origen, destino, volumen, frecuencia y
+                                    servicio requerido.</small>
+                            </div>
+                        </article>
+                        <article><span class="proof-index">02</span>
+                            <div>
+                                <h3>WMS</h3>
+                                <p>La operación puede utilizar el WMS de Almagrario para administrar inventario y
+                                    movimientos bajo la configuración acordada.</p>
+                            </div>
+                        </article>
+                        <article><span class="proof-index">03</span>
+                            <div>
+                                <h3>Responsabilidades claras</h3>
+                                <p>Ervi articula el modelo comercial y operativo. Almagrario aporta el respaldo
+                                    logístico correspondiente. El cliente aporta producto, información y decisiones bajo
+                                    su responsabilidad.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="trust-note"><strong>Importante:</strong> los más de 60 años corresponden a la trayectoria
+                        de Almagrario, no a Ervi.</p>
+                </div>
+                <div class="network-panel scene">
+                    <div class="scene-label">REPRESENTACIÓN DE RED</div>
+                    <svg class="network-art" viewBox="0 0 620 480"
+                        aria-label="Representación abstracta de la red logística en Colombia">
+                        <path class="colombia-shape"
+                            d="M310 32 C276 60 254 90 258 130 C245 165 264 181 252 210 C235 248 260 282 286 303 C290 339 313 375 296 415 C321 423 348 409 352 374 C380 351 401 329 394 297 C423 280 438 255 421 230 C445 198 425 166 405 151 C407 110 386 79 361 59 C350 43 330 34 310 32Z" />
+                        <g class="net-lines">
+                            <path d="M309 92 L332 153 L355 211 L339 269 L317 334 L329 390" />
+                            <path d="M332 153 L383 184 L402 228" />
+                            <path d="M355 211 L289 219 L265 274" />
+                            <path d="M339 269 L392 298 L351 355" />
+                        </g>
+                        <g class="city city-1">
+                            <circle cx="309" cy="92" r="8" /><text x="322" y="96">Bogotá</text>
+                        </g>
+                        <g class="city city-2">
+                            <circle cx="332" cy="153" r="8" /><text x="345" y="157">Funza</text>
+                        </g>
+                        <g class="city city-3">
+                            <circle cx="383" cy="184" r="8" /><text x="396" y="188">Bucaramanga</text>
+                        </g>
+                        <g class="city city-4">
+                            <circle cx="402" cy="228" r="8" /><text x="415" y="232">Barranquilla</text>
+                        </g>
+                        <g class="city city-5">
+                            <circle cx="392" cy="298" r="8" /><text x="405" y="302">Santa Marta</text>
+                        </g>
+                        <g class="city city-6">
+                            <circle cx="351" cy="355" r="8" /><text x="364" y="359">Cartagena</text>
+                        </g>
+                        <g class="city city-7">
+                            <circle cx="265" cy="274" r="8" /><text x="278" y="278">Itagüí</text>
+                        </g>
+                        <g class="city city-8">
+                            <circle cx="317" cy="334" r="8" /><text x="330" y="338">Cali</text>
+                        </g>
+                    </svg>
+                    <div class="coverage-note">La cobertura se valida según operación.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ONBOARDING -->
+        <section class="section onboarding">
+            <div class="container">
+                <div class="section-head narrow-head">
+                    <p class="eyebrow">PUESTA EN MARCHA</p>
+                    <h2>Primero entendemos. Después conectamos. <span>Entonces operamos.</span></h2>
+                </div>
+                <div class="onboarding-line" id="onboardingLine">
+                    <article><span>01</span>
+                        <h3>Diagnóstico</h3>
+                        <p>Producto, demanda, canales, ciudades, inventario, volumen y fricciones.</p>
+                        <div class="artifact">◎</div>
+                    </article>
+                    <article><span>02</span>
+                        <h3>Diseño</h3>
+                        <p>Alcance, responsables, tarifas, condiciones comerciales y niveles de servicio.</p>
+                        <div class="artifact">⌁</div>
+                    </article>
+                    <article><span>03</span>
+                        <h3>Configuración</h3>
+                        <p>Catálogo, SKUs, flujo de información y reglas de operación.</p>
+                        <div class="artifact">▦</div>
+                    </article>
+                    <article><span>04</span>
+                        <h3>Inventario</h3>
+                        <p>Recepción y validación antes de habilitar pedidos.</p>
+                        <div class="artifact">□</div>
+                    </article>
+                    <article><span>05</span>
+                        <h3>Activación</h3>
+                        <p>Puesta en marcha de canales y primeras órdenes.</p>
+                        <div class="artifact">↗</div>
+                    </article>
+                    <article><span>06</span>
+                        <h3>Estabilización</h3>
+                        <p>Revisión de novedades, ajustes y definición de la información operativa.</p>
+                        <div class="artifact">✓</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section light" id="faq">
+            <div class="container faq-grid">
+                <div class="section-head">
+                    <p class="eyebrow">PREGUNTAS</p>
+                    <h2>Resolver objeciones, <span>no llenar espacio.</span></h2>
+                    <p>Las respuestas dependen de la operación real. Estos son los escenarios que conviene despejar
+                        antes de empezar.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a1"
+                            id="faq-q1"><span>¿Necesito contratar todos los servicios?</span><span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+                            <p>No. El alcance se define según el problema y la operación. La propuesta puede
+                                concentrarse en comercialización, logística, fulfillment o una combinación de ellos.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a2"
+                            id="faq-q2"><span>¿Qué productos tienen mejor encaje?</span><span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+                            <p>Repuestos, accesorios, productos de retail y referencias de inventario general son el
+                                encaje inicial. Otras categorías se revisan según sus condiciones de almacenamiento,
+                                manipulación, regulación, rotación y volumen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a3"
+                            id="faq-q3"><span>¿Cómo funciona el modelo?</span><span class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+                            <p>El inventario entra a una operación coordinada donde los canales de venta se conectan con
+                                preparación, entrega, facturación y recaudo bajo las responsabilidades acordadas. En
+                                operaciones de este tipo puede aplicarse un esquema de dropshipping cuando corresponda.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a4"
+                            id="faq-q4"><span>¿Cómo calculan la tarifa?</span><span class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+                            <p>Se consideran variables como almacenamiento, movimientos, preparación, empaque,
+                                transporte, canales, volumen y servicios administrativos. La propuesta se construye
+                                sobre la operación real.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a5"
+                            id="faq-q5"><span>¿Qué cobertura tienen?</span><span class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+                            <p>La capacidad logística disponible incluye Bogotá, Funza, Cali, Itagüí, Bucaramanga,
+                                Barranquilla, Santa Marta y Cartagena. La ruta efectiva se valida según origen, destino,
+                                frecuencia, volumen y nivel de servicio.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-a6"
+                            id="faq-q6"><span>¿Qué experiencia tiene Ervi?</span><span
+                                class="faq-icon">+</span></button>
+                        <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+                            <p>Ervi lleva un año desarrollando esta propuesta. La trayectoria logística corresponde a
+                                Almagrario, que cuenta con más de 60 años de trayectoria y una infraestructura que puede
+                                respaldar la operación según alcance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contact section-dark" id="contacto">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow on-dark">SIGUIENTE PASO</p>
+                    <h2>Cuéntanos qué está frenando hoy <span>tu operación.</span></h2>
+                    <p>Revisamos producto, canales, volumen, ciudades y principal cuello de botella. Si existe encaje,
+                        definimos un alcance claro para comenzar.</p>
+                    <div class="contact-steps">
+                        <div><span>01</span><strong>Producto</strong></div>
+                        <div><span>02</span><strong>Canal</strong></div>
+                        <div><span>03</span><strong>Operación</strong></div>
+                    </div>
+                    <div class="contact-route"><span class="route-active"></span><span class="route-dot"></span><span
+                            class="route-dot"></span><span class="route-dot"></span></div>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <div class="form-group-title"><span>01</span>
+                            <h3>Tu operación</h3>
+                        </div>
+                        <div class="form-grid"><label>¿Fabricas, importas o distribuyes?<select name="tipo" required>
+                                    <option value="">Selecciona</option>
+                                    <option>Fabrico</option>
+                                    <option>Importo</option>
+                                    <option>Distribuyo</option>
+                                </select></label><label>Tipo de producto<input name="producto" type="text"
+                                    placeholder="Repuestos, retail, accesorios..." required></label><label>Canales
+                                actuales<input name="canales" type="text"
+                                    placeholder="TAT, e-commerce, distribuidores..."
+                                    required></label><label>Ciudad(es)<input name="ciudades" type="text"
+                                    placeholder="Bogotá, Cali..." required></label><label>Pedidos mensuales
+                                aproximados<input name="pedidos" type="text" placeholder="Ej. 500" required></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-title"><span>02</span>
+                            <h3>Tu reto</h3>
+                        </div>
+                        <div class="form-grid one"><label>Principal cuello de botella<textarea name="reto" rows="3"
+                                    placeholder="¿Dónde se rompe hoy tu recorrido?"
+                                    required></textarea></label><label>¿Qué quieres mejorar?<textarea name="mejora"
+                                    rows="3" placeholder="Canales, inventario, entregas, recaudo..."
+                                    required></textarea></label></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group-title"><span>03</span>
+                            <h3>Contacto</h3>
+                        </div>
+                        <div class="form-grid"><label>Nombre<input name="nombre" type="text"
+                                    required></label><label>Empresa<input name="empresa" type="text"
+                                    required></label><label>Correo corporativo<input name="correo" type="email"
+                                    required></label><label>Teléfono<input name="telefono" type="tel"></label></div>
+                    </div>
+                    <label class="consent"><input type="checkbox" name="consent" required><span>Acepto el tratamiento de
+                            mis datos de acuerdo con la política de privacidad.</span></label>
+                    <button class="button button-primary form-submit" type="submit">Solicitar diagnóstico
+                        <span>↗</span></button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div><img src="logo_ervi_web.svg" class="footer-logo" alt="ERVI">
+                <p>Comercialización, logística y fulfillment conectados de principio a fin.</p><small>Operación
+                    logística apoyada por Almagrario.</small>
+            </div>
+            <nav aria-label="Navegación del footer"><strong>Navegación</strong><a href="#soluciones">Soluciones</a><a
+                    href="#proceso">Cómo funciona</a><a href="#servicios">Servicios</a><a
+                    href="#respaldo">Respaldo</a><a href="#faq">Preguntas</a></nav>
+            <nav aria-label="Legal"><strong>Legal</strong><a href="https://www.ervi.com.co" target="_blank"
+                    rel="noopener noreferrer">Ervi Importación ↗</a><a href="#contacto">Contacto</a><a
+                    href="#inicio">Privacidad</a></nav>
+        </div>
+        <div class="container footer-bottom"><span>© 2026 Ervi. Todos los derechos reservados.</span><span>Diseñado para
+                convertir complejidad en recorrido.</span></div>
+    </footer>
+
+    <a class="mobile-cta" href="#contacto" id="mobileCta">Diseñar mi operación <span>↗</span></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
