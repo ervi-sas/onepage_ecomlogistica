@@ -132,7 +132,7 @@
             }
 
             window.setTimeout(function () {
-                statusEl.style.color = "#7cf0ff";
+                statusEl.style.color = "#4be3cf";
                 statusEl.textContent =
                     "Recibimos tu solicitud. Te contactaremos en las próximas horas.";
                 form.reset();
