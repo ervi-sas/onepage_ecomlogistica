@@ -44,9 +44,31 @@
       width:"100%", ease:"none",
       scrollTrigger:{trigger:".journey__track", start:"top 72%", end:"bottom 55%", scrub:1}
     });
-    gsap.fromTo(".journey-step", {y:30, opacity:.35}, {
-      y:0, opacity:1, stagger:.12, ease:"power2.out",
-      scrollTrigger:{trigger:".journey__steps", start:"top 78%", end:"bottom 45%", scrub:1}
+    const journeySteps = gsap.utils.toArray(".journey-step");
+    journeySteps.forEach((step, i) => {
+      gsap.to(step, {
+        y:0, opacity:1, ease:"power2.out",
+        scrollTrigger:{
+          trigger:step,
+          start:"top 78%",
+          end:"top 55%",
+          scrub:1,
+          onUpdate:self => step.style.setProperty("--fill", Math.round(self.progress * 100))
+        }
+      });
+    });
+
+    // Cada ruta de distribución se dibuja cuando entra la sección.
+    gsap.utils.toArray(".import-route").forEach((path, i) => {
+      const length = path.getTotalLength ? path.getTotalLength() : 200;
+      gsap.set(path, {strokeDasharray:length + " " + length, strokeDashoffset:length});
+      gsap.to(path, {
+        strokeDashoffset:0,
+        duration:1.25,
+        delay:i*.13,
+        ease:"power3.out",
+        scrollTrigger:{trigger:".importer-visual", start:"top 75%", once:true}
+      });
     });
 
     gsap.fromTo(".layer", {x:-35, opacity:0}, {
@@ -57,11 +79,6 @@
     gsap.fromTo(".network .node", {scale:0, opacity:0}, {
       scale:1, opacity:1, stagger:.08, ease:"back.out(1.8)",
       scrollTrigger:{trigger:".network", start:"top 75%", once:true}
-    });
-
-    gsap.fromTo(".import-route", {scaleX:0}, {
-      scaleX:1, transformOrigin:"left center", duration:1.5, ease:"power3.out",
-      scrollTrigger:{trigger:".importer-visual", start:"top 75%", once:true}
     });
 
     gsap.to(".mobile-cta", {
@@ -94,19 +111,19 @@
       const invalid = required.find(input => input.type === "checkbox" ? !input.checked : !input.value.trim());
       if (invalid) {
         status.textContent = "Completa los campos obligatorios antes de enviar.";
-        status.style.color = "#ff9d9d";
+        status.style.color = "#e56b6f";
         invalid.focus();
         return;
       }
       const email = form.querySelector('[type="email"]');
       if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
         status.textContent = "Revisa el correo corporativo.";
-        status.style.color = "#ff9d9d";
+        status.style.color = "#e56b6f";
         email.focus();
         return;
       }
       status.textContent = "Formulario listo para conectar con el backend. La página no simula una recepción exitosa.";
-      status.style.color = "#7cf0ff";
+      status.style.color = "#b0de09";
     });
   }
 
