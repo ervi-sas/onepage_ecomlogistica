@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 820" width="700" height="820">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132436"/>
+      <stop offset="0.52" stop-color="#173044"/>
+      <stop offset="1" stop-color="#0f1d2c"/>
+    </linearGradient>
+    <linearGradient id="map" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b0de09" stop-opacity=".34"/>
+      <stop offset=".45" stop-color="#06b7a5" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#06b7a5" stop-opacity=".22"/>
+    </linearGradient>
+    <filter id="texture">
+      <feTurbulence type="fractalNoise" baseFrequency=".075" numOctaves="4" seed="12" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="soft">
+        <feFuncA type="table" tableValues="0 .22"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="soft" mode="screen"/>
+    </filter>
+    <clipPath id="co">
+      <polygon points="385,-16 455,0 406,66 406,123 462,131 462,164 497,180 476,238 553,238 581,279 707,279 665,361 686,451 658,459 679,558 637,508 602,558 560,566 553,607 595,607 595,623 553,631 553,664 595,697 581,828 539,820 560,730 476,722 406,738 322,681 238,656 112,648 112,599 126,582 147,541 154,484 168,459 161,385 182,353 168,328 140,271 140,238 119,213 189,197 238,156 252,148 287,90 301,74 357,49"/>
+    </clipPath>
+  </defs>
+
+  <rect width="700" height="820" fill="url(#bg)"/>
+  <g clip-path="url(#co)" filter="url(#texture)">
+    <rect x="80" y="0" width="640" height="820" fill="url(#map)"/>
+    <g opacity=".2" stroke="#b0de09" stroke-width="1">
+      <path d="M80 80H660M50 140H690M80 200H660M50 260H690M80 320H660M50 380H690M80 440H660M50 500H690M80 560H660M50 620H690M80 680H660M50 740H690"/>
+      <path d="M140 0V820M200 0V820M260 0V820M320 0V820M380 0V820M440 0V820M500 0V820M560 0V820M620 0V820"/>
+    </g>
+    <g fill="#fff" opacity=".16">
+      <circle cx="205" cy="190" r="2"/><circle cx="248" cy="230" r="1.7"/><circle cx="300" cy="285" r="2.2"/><circle cx="355" cy="330" r="1.5"/><circle cx="405" cy="375" r="2"/><circle cx="460" cy="420" r="1.6"/><circle cx="515" cy="470" r="2"/><circle cx="550" cy="520" r="1.4"/><circle cx="390" cy="550" r="1.8"/><circle cx="330" cy="500" r="1.3"/>
+    </g>
+  </g>
+  <polygon points="385,-16 455,0 406,66 406,123 462,131 462,164 497,180 476,238 553,238 581,279 707,279 665,361 686,451 658,459 679,558 637,508 602,558 560,566 553,607 595,607 595,623 553,631 553,664 595,697 581,828 539,820 560,730 476,722 406,738 322,681 238,656 112,648 112,599 126,582 147,541 154,484 168,459 161,385 182,353 168,328 140,271 140,238 119,213 189,197 238,156 252,148 287,90 301,74 357,49" fill="none" stroke="#06b7a5" stroke-opacity=".38" stroke-width="4"/>
+</svg>
