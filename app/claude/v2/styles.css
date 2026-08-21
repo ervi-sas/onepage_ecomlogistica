@@ -673,7 +673,7 @@ h3 {
 }
 
 .layer-route__path {
-    font: 600 .65rem var(--mono);
+    font: 600 .95rem var(--mono);
     letter-spacing: .14em;
     color: rgba(255, 255, 255, .45);
     display: flex;
@@ -2052,7 +2052,8 @@ details p {
     font-size: .56rem;
     letter-spacing: -.04em;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    z-index: 1;
 }
 
 .service,
