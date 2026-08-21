@@ -1,0 +1,60 @@
+# Nombre del workflow que aparecerá en la pestaña "Actions"
+name: Deploy Tulogistico.com One Page on GitHub Pages
+# Eventos que disparan el workflow
+on:
+  # Ejecutar cada vez que se haga push
+  push:
+    # Solo cuando el push sea sobre la rama master
+    branches: 
+      - "master"
+  pull_request:
+    branches: 
+      - "master"
+# Permisos que GitHub otorgará temporalmente al workflow
+permissions:
+  contents: read
+  pages: write
+  # Permitir autenticarse mediante OpenID (necesario para deploy-pages)
+  id-token: write
+# Evita que existan dos despliegues simultáneos
+concurrency:
+  # Nombre del grupo de concurrencia
+  group: pages
+  # Si hay un despliegue ejecutándose y llega otro,
+  # se cancela el anterior y continúa el más reciente.
+  cancel-in-progress: true
+
+# Definición de los trabajos (jobs)
+jobs:
+  # Nombre interno del job
+  despliegue:
+    # Define el entorno (Environment) donde quedará registrado el despliegue
+    environment:
+      # Nombre del Environment
+      name: github-pages
+      # La URL publicada será tomada automáticamente del paso deployment
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Sistema operativo de la máquina virtual
+    runs-on: ubuntu-latest
+    # Pasos del workflow
+    steps:
+      # Descarga el contenido del repositorio a la máquina virtual
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Configura el entorno para GitHub Pages
+      # (variables, permisos y metadatos necesarios)
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      # Empaqueta el contenido que será publicado
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # ESTA ES LA LÍNEA IMPORTANTE
+          # Se publica únicamente esta carpeta
+          path: app/claude/v2
+      # Envía el artifact al servicio GitHub Pages
+      - name: Despliegue en GitHub Pages
+        # El id permite acceder a las salidas (outputs) del paso
+        id: deployment
+        # Acción oficial de GitHub encargada del despliegue
+        uses: actions/deploy-pages@v4
