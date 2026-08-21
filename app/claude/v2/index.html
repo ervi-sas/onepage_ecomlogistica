@@ -1,248 +1,499 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" sizes="512x512" href="./img/tulogistico-favicon.png">
   <link rel="apple-touch-icon" href="./img/tulogistico-favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TuLogístico | Comercialización, logística y recaudo conectados</title>
-  <meta name="description" content="Conecta canales de venta, inventario, distribución, facturación y recaudo con una operación respaldada logísticamente por Almagrario.">
+  <meta name="description"
+    content="Conecta canales de venta, inventario, distribución, facturación y recaudo con una operación respaldada logísticamente por Almagrario.">
   <meta property="og:title" content="Del producto listo a una operación que fluye.">
-  <meta property="og:description" content="Comercialización, logística y fulfillment conectados para fabricantes, importadores y negocios multicanal.">
+  <meta property="og:description"
+    content="Comercialización, logística y fulfillment conectados para fabricantes, importadores y negocios multicanal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
 
-<header class="nav" id="navHeader">
-  <div class="shell nav__inner">
-    <a class="brand" href="#inicio" aria-label="TuLogístico — inicio">
-      <img src="./img/tulogistico-logo.png" alt="TuLogístico">
-    </a>
-    <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
-      <a href="#soluciones">Soluciones</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#respaldo">Respaldo</a>
-      <a href="#faq">Preguntas</a>
-    </nav>
-    <a href="#contacto" class="btn btn--primary btn--small">Diseñar mi operación</a>
-    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  <header class="nav" id="navHeader">
+    <div class="shell nav__inner">
+      <a class="brand" href="#inicio" aria-label="TuLogístico — inicio">
+        <img src="./img/tulogistico-logo.png" alt="TuLogístico">
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+        <a href="#soluciones">Soluciones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#respaldo">Respaldo</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <a href="#contacto" class="btn btn--primary btn--small">Diseñar mi operación</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks"
+        aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-<main id="contenido">
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero__noise"></div>
-    <div class="hero__glow hero__glow--a"></div><div class="hero__glow hero__glow--b"></div>
-    <svg class="hero__routes" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M-50 700 C250 620 270 170 610 160 S850 530 1250 80" class="route route--1"/>
-      <path d="M-50 610 C210 500 360 320 620 330 S920 690 1250 500" class="route route--2"/>
-      <path d="M-50 760 C240 740 430 480 690 490 S980 260 1250 220" class="route route--3"/>
-    </svg>
-    <div class="shell hero__grid">
-      <div class="hero__copy reveal">
-        <p class="eyebrow eyebrow--dark"><span></span>COMERCIALIZACIÓN · LOGÍSTICA · FULFILLMENT</p>
-        <h1>Tu producto está listo. <em>Hagamos que toda la operación también.</em></h1>
-        <p class="hero__lead">TuLogístico conecta venta, inventario, preparación, entrega, facturación y recaudo en una operación diseñada alrededor de tu negocio. Tú defines el producto y el crecimiento que buscas; nosotros articulamos el recorrido.</p>
-        <div class="hero__ctas">
-          <a href="#contacto" class="btn btn--primary">Diseñar mi operación <span>↗</span></a>
-          <a href="#como-funciona" class="btn btn--ghost">Ver cómo funciona</a>
-        </div>
-        <p class="proof">Respaldo logístico de Almagrario · +60 años de trayectoria del aliado · 8 ciudades disponibles según operación</p>
-        <p class="attribution">La trayectoria y la infraestructura logística corresponden a Almagrario. TuLogístico desarrolla y articula el modelo comercial y operativo.</p>
-      </div>
-
-      <div class="hero-visual reveal reveal--right" aria-label="Representación animada de una operación conectada">
-        <div class="visual-label">REPRESENTACIÓN · NO SON MÉTRICAS REALES</div>
-        <div class="flow-card">
-          <div class="flow-card__top"><span>OPERACIÓN EN CURSO</span><b>●</b></div>
-          <div class="flow-stage">
-            <div class="package"><span></span></div>
-            <div class="node node--sale"><i></i><span>VENTA</span></div>
-            <div class="node node--stock"><i></i><span>INVENTARIO</span></div>
-            <div class="node node--ship"><i></i><span>DESPACHO</span></div>
-            <div class="node node--pay"><i></i><span>RECAUDO</span></div>
-            <div class="flow-line line--a"></div><div class="flow-line line--b"></div><div class="flow-line line--c"></div>
-            <div class="spark spark--1"></div><div class="spark spark--2"></div><div class="spark spark--3"></div>
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__noise"></div>
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+      <svg class="hero__routes" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-50 700 C250 620 270 170 610 160 S850 530 1250 80" class="route route--1" />
+        <path d="M-50 610 C210 500 360 320 620 330 S920 690 1250 500" class="route route--2" />
+        <path d="M-50 760 C240 740 430 480 690 490 S980 260 1250 220" class="route route--3" />
+      </svg>
+      <div class="shell hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow eyebrow--dark"><span></span>COMERCIALIZACIÓN · LOGÍSTICA · FULFILLMENT</p>
+          <h1>Tu producto está listo. <em>Hagamos que toda la operación también.</em></h1>
+          <p class="hero__lead">TuLogístico conecta venta, inventario, preparación, entrega, facturación y recaudo en
+            una operación diseñada alrededor de tu negocio. Tú defines el producto y el crecimiento que buscas; nosotros
+            articulamos el recorrido.</p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary">Diseñar mi operación <span>↗</span></a>
+            <a href="#como-funciona" class="btn btn--ghost">Ver cómo funciona</a>
           </div>
-          <div class="flow-status"><span>Pedido ERV-0284</span><strong>EN RECORRIDO</strong></div>
+          <p class="proof">Respaldo logístico de Almagrario · +60 años de trayectoria del aliado · 8 ciudades
+            disponibles según operación</p>
+          <p class="attribution">La trayectoria y la infraestructura logística corresponden a Almagrario. TuLogístico
+            desarrolla y articula el modelo comercial y operativo.</p>
+        </div>
+
+        <div class="hero-visual reveal reveal--right" aria-label="Representación animada de una operación conectada">
+          <div class="visual-label">REPRESENTACIÓN · NO SON MÉTRICAS REALES</div>
+          <div class="flow-card">
+            <div class="flow-card__top"><span>OPERACIÓN EN CURSO</span><b>●</b></div>
+            <div class="flow-stage">
+              <div class="package"><span></span></div>
+              <div class="node node--sale"><i></i><span>VENTA</span></div>
+              <div class="node node--stock"><i></i><span>INVENTARIO</span></div>
+              <div class="node node--ship"><i></i><span>DESPACHO</span></div>
+              <div class="node node--pay"><i></i><span>RECAUDO</span></div>
+              <div class="flow-line line--a"></div>
+              <div class="flow-line line--b"></div>
+              <div class="flow-line line--c"></div>
+              <div class="spark spark--1"></div>
+              <div class="spark spark--2"></div>
+              <div class="spark spark--3"></div>
+            </div>
+            <div class="flow-status"><span>Pedido ERV-0284</span><strong>EN RECORRIDO</strong></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero__scroll">SCROLL <span></span></div>
-  </section>
+      <div class="hero__scroll">SCROLL <span></span></div>
+    </section>
 
-  <!-- PROBLEMA -->
-  <section class="section section--paper problem" id="soluciones">
-    <div class="shell">
-      <div class="section-head reveal">
-        <p class="eyebrow">EL PROBLEMA</p>
-        <h2>Vender más no debería obligarte a <em>coordinar más.</em></h2>
-        <p>Un nuevo canal puede traer más pedidos, pero también más inventario que controlar, más entregas que coordinar y más información que conciliar. TuLogístico entra donde esa fragmentación empieza a frenar el crecimiento.</p>
-      </div>
-      <div class="converge reveal">
-        <div class="converge__inputs">
-          <article><span>01</span><h3>Quiero llegar a más compradores</h3><p>Tu producto tiene potencial, pero abrir e-commerce, TAT o nuevos canales implica crear más estructura comercial y operativa.</p><a href="#contacto">Abrir canales ↗</a></article>
-          <article><span>02</span><h3>Tengo producto, pero necesito una operación local</h3><p>Tienes mercancía y oportunidad de mercado, pero necesitas una estructura que reciba, almacene, prepare, distribuya y cierre la venta.</p><a href="#contacto">Operar en Colombia ↗</a></article>
-          <article><span>03</span><h3>Mis canales ya no están conectados</h3><p>Las ventas están en un lugar, el inventario en otro y la información de entrega y recaudo en otro. La operación pierde continuidad.</p><a href="#contacto">Conectar mi operación ↗</a></article>
+    <!-- PROBLEMA -->
+    <section class="section section--paper problem" id="soluciones">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">EL PROBLEMA</p>
+          <h2>Vender más no debería obligarte a <em>coordinar más.</em></h2>
+          <p>Un nuevo canal puede traer más pedidos, pero también más inventario que controlar, más entregas que
+            coordinar y más información que conciliar. TuLogístico entra donde esa fragmentación empieza a frenar el
+            crecimiento.</p>
         </div>
-        <div class="converge__visual"><div class="converge__core">TuLogístico</div><div class="beam beam--1"></div><div class="beam beam--2"></div><div class="beam beam--3"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROPUESTA -->
-  <section class="section section--dark proposal" id="propuesta">
-    <div class="shell">
-      <div class="section-head section-head--dark reveal">
-        <p class="eyebrow eyebrow--dark">LA PROPUESTA</p>
-        <h2>No agregamos otro proveedor. <em>Conectamos el recorrido.</em></h2>
-        <p>TuLogístico articula tres capacidades que normalmente viven separadas: comercialización, operación logística y cierre administrativo de la venta.</p>
-      </div>
-      <div class="layer-route reveal">
-        <div class="layer-route__path">DEMANDA <span>→</span> PRODUCTO <span>→</span> PEDIDO <span>→</span> ENTREGA <span>→</span> RECAUDO</div>
-        <article class="layer layer--commercial"><div class="layer__num">01</div><div><h3>Comercialización</h3><strong>Ponemos tu producto donde puede crecer.</strong><p>E-commerce, TAT y catálogo digital alineados con el portafolio y la capacidad de abastecimiento.</p><small>Activación de canales · Gestión de catálogo y portafolio · Operación e-commerce · Desarrollo TAT · Catálogo digital</small></div></article>
-        <article class="layer layer--logistics"><div class="layer__num">02</div><div><h3>Logística</h3><strong>Hacemos que el pedido encuentre su camino.</strong><p>Recepción, almacenamiento, control de inventario, alistamiento, despacho, distribución y gestión de novedades, con apoyo logístico de Almagrario según el alcance definido.</p><small>Recepción · Almacenamiento · Inventario · Alistamiento · Despacho · Distribución · Entregas · Apoyo WMS</small></div></article>
-        <article class="layer layer--fulfillment"><div class="layer__num">03</div><div><h3>Fulfillment</h3><strong>Cerramos el ciclo de la venta.</strong><p>Conectamos facturación, medios de pago, recaudo y conciliación bajo las condiciones acordadas para cada operación.</p><small>Facturación · Medios de pago · Recaudo · Conciliación</small></div></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CÓMO FUNCIONA -->
-  <section class="section section--dark journey" id="como-funciona">
-    <div class="shell">
-      <div class="journey__intro reveal">
-        <p class="eyebrow eyebrow--dark">EL RECORRIDO</p>
-        <h2>Seis momentos. <em>Una operación conectada.</em></h2>
-        <p>Diseñamos el recorrido a partir de tus canales, producto, volumen, ciudades y condiciones comerciales. Cada etapa tiene responsables y reglas definidos antes de comenzar.</p>
-      </div>
-      <div class="journey__track" id="journeyTrack">
-        <div class="journey__progress"></div>
-        <div class="journey__steps">
-          <article class="journey-step"><b>01</b><div class="journey-icon">↗</div><h3>Vender</h3><p>Activamos los canales acordados y llevamos la demanda hacia la operación.</p></article>
-          <article class="journey-step"><b>02</b><div class="journey-icon">↓</div><h3>Recibir</h3><p>El producto ingresa, se valida y queda listo para ser administrado.</p></article>
-          <article class="journey-step"><b>03</b><div class="journey-icon">▦</div><h3>Almacenar</h3><p>El inventario se organiza por SKU, lote u otro criterio definido para la operación, con apoyo WMS cuando corresponda.</p></article>
-          <article class="journey-step"><b>04</b><div class="journey-icon">□</div><h3>Preparar y despachar</h3><p>Cada pedido se convierte en una salida lista para el canal y destino correspondientes.</p></article>
-          <article class="journey-step"><b>05</b><div class="journey-icon">→</div><h3>Entregar</h3><p>Coordinamos distribución, transporte y gestión de novedades según el alcance acordado.</p></article>
-          <article class="journey-step"><b>06</b><div class="journey-icon">✓</div><h3>Facturar y recaudar</h3><p>Cerramos el ciclo con facturación, medios de pago, recaudo y conciliación.</p></article>
+        <div class="converge reveal">
+          <div class="converge__inputs">
+            <article><span>01</span>
+              <h3>Quiero llegar a más compradores</h3>
+              <p>Tu producto tiene potencial, pero abrir e-commerce, TAT o nuevos canales implica crear más estructura
+                comercial y operativa.</p><a href="#contacto">Abrir canales ↗</a>
+            </article>
+            <article><span>02</span>
+              <h3>Tengo producto, pero necesito una operación local</h3>
+              <p>Tienes mercancía y oportunidad de mercado, pero necesitas una estructura que reciba, almacene, prepare,
+                distribuya y cierre la venta.</p><a href="#contacto">Operar en Colombia ↗</a>
+            </article>
+            <article><span>03</span>
+              <h3>Mis canales ya no están conectados</h3>
+              <p>Las ventas están en un lugar, el inventario en otro y la información de entrega y recaudo en otro. La
+                operación pierde continuidad.</p><a href="#contacto">Conectar mi operación ↗</a>
+            </article>
+          </div>
+          <div class="converge__visual">
+            <div class="converge__core">TuLogístico</div>
+            <div class="beam beam--1"></div>
+            <div class="beam beam--2"></div>
+            <div class="beam beam--3"></div>
+          </div>
         </div>
       </div>
-      <aside class="journey__cta reveal"><span>¿DÓNDE SE ROMPE HOY TU RECORRIDO?</span><p>Cuéntanos qué parte de la operación te está frenando y revisamos dónde puede entrar TuLogístico.</p><a class="btn btn--primary" href="#contacto">Solicitar diagnóstico</a></aside>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICIOS -->
-  <section class="section section--paper services" id="servicios">
-    <div class="shell">
-      <div class="section-head reveal"><p class="eyebrow">SERVICIOS</p><h2>La operación se adapta a tu negocio, <em>no al revés.</em></h2><p>No todos los clientes necesitan exactamente el mismo alcance. Definimos qué debe asumir TuLogístico, qué soporta el aliado logístico y qué permanece en manos del cliente.</p></div>
-      <div class="services-grid">
-        <article class="service reveal"><p class="service__num">01 / COMERCIALIZACIÓN</p><h3>E-commerce, TAT y catálogo digital</h3><p>Para ampliar el alcance comercial con una operación capaz de responder a la demanda.</p><strong>Resultado: más canales sin multiplicar la estructura al mismo ritmo.</strong></article>
-        <article class="service reveal"><p class="service__num">02 / GESTIÓN LOGÍSTICA</p><h3>Del inventario al destino</h3><p>Recepción, almacenamiento, inventario, alistamiento, despacho, transporte, entrega y novedades bajo el alcance acordado.</p><strong>Resultado: continuidad entre inventario, pedido y destino.</strong></article>
-        <article class="service reveal"><p class="service__num">03 / FULFILLMENT ADMINISTRATIVO</p><h3>Facturación, pagos, recaudo y conciliación</h3><p>Conectados con la operación para cerrar el ciclo de la venta.</p><strong>Resultado: menos puntos de transferencia al cerrar la venta.</strong></article>
+    <!-- PROPUESTA -->
+    <section class="section section--dark proposal" id="propuesta">
+      <div class="shell">
+        <div class="section-head section-head--dark reveal">
+          <p class="eyebrow eyebrow--dark">LA PROPUESTA</p>
+          <h2>No agregamos otro proveedor. <em>Conectamos el recorrido.</em></h2>
+          <p>TuLogístico articula tres capacidades que normalmente viven separadas: comercialización, operación
+            logística y cierre administrativo de la venta.</p>
+        </div>
+        <div class="layer-route reveal">
+          <div class="layer-route__path">DEMANDA <span>→</span> PRODUCTO <span>→</span> PEDIDO <span>→</span> ENTREGA
+            <span>→</span> RECAUDO
+          </div>
+          <article class="layer layer--commercial">
+            <div class="layer__num">01</div>
+            <div>
+              <h3>Comercialización</h3><strong>Ponemos tu producto donde puede crecer.</strong>
+              <p>E-commerce, TAT y catálogo digital alineados con el portafolio y la capacidad de abastecimiento.</p>
+              <small>Activación de canales · Gestión de catálogo y portafolio · Operación e-commerce · Desarrollo TAT ·
+                Catálogo digital</small>
+            </div>
+          </article>
+          <article class="layer layer--logistics">
+            <div class="layer__num">02</div>
+            <div>
+              <h3>Logística</h3><strong>Hacemos que el pedido encuentre su camino.</strong>
+              <p>Recepción, almacenamiento, control de inventario, alistamiento, despacho, distribución y gestión de
+                novedades, con apoyo logístico de Almagrario según el alcance definido.</p><small>Recepción ·
+                Almacenamiento · Inventario · Alistamiento · Despacho · Distribución · Entregas · Apoyo WMS</small>
+            </div>
+          </article>
+          <article class="layer layer--fulfillment">
+            <div class="layer__num">03</div>
+            <div>
+              <h3>Fulfillment</h3><strong>Cerramos el ciclo de la venta.</strong>
+              <p>Conectamos facturación, medios de pago, recaudo y conciliación bajo las condiciones acordadas para cada
+                operación.</p><small>Facturación · Medios de pago · Recaudo · Conciliación</small>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PARA QUIÉN -->
-  <section class="section section--paper fit" id="para-quien">
-    <div class="shell">
-      <div class="section-head reveal"><p class="eyebrow">ENCAJE</p><h2>TuLogístico tiene sentido cuando crecer <em>ya exige otra operación.</em></h2><p>El mejor encaje inicial está en repuestos, accesorios, productos de retail y referencias de inventario general. Otras categorías se revisan según almacenamiento, manipulación, regulación, rotación y volumen.</p></div>
-      <div class="fit-selector reveal">
-        <div class="fit-toggle"><button class="is-active" data-fit="yes">Sí encaja</button><button data-fit="review">Revisar</button><button data-fit="no">No encaja</button></div>
-        <div class="fit-panel is-active" data-panel="yes"><div><span>01</span><h3>Fabricas o importas producto físico.</h3></div><div><span>02</span><h3>Quieres abrir o consolidar varios canales.</h3></div><div><span>03</span><h3>Tu operación interna empieza a quedarse corta.</h3></div><div><span>04</span><h3>Inventario, pedidos, entregas y recaudo están fragmentados.</h3></div><div><span>05</span><h3>Necesitas capacidad operativa en Colombia sin construirla completa desde cero.</h3></div></div>
-        <div class="fit-panel" data-panel="review"><div><span>01</span><h3>La categoría requiere validación específica.</h3></div><div><span>02</span><h3>La capacidad depende de almacenamiento, manipulación, regulación, rotación o volumen.</h3></div><div><span>03</span><h3>La cobertura debe revisarse por origen, destino y frecuencia.</h3></div><div><span>04</span><h3>La operación necesita condiciones particulares antes de definir alcance.</h3></div></div>
-        <div class="fit-panel" data-panel="no"><div><span>01</span><h3>Buscas únicamente almacenamiento sin necesidad de articular la venta.</h3></div><div><span>02</span><h3>Necesitas una capacidad o categoría que todavía no haya sido validada.</h3></div><div><span>03</span><h3>Esperas cobertura automática de cualquier ciudad o ruta.</h3></div><div><span>04</span><h3>Buscas una tarifa estándar sin revisar producto, volumen y operación.</h3></div></div>
+    <!-- CÓMO FUNCIONA -->
+    <section class="section section--dark journey" id="como-funciona">
+      <div class="shell">
+        <div class="journey__intro reveal">
+          <p class="eyebrow eyebrow--dark">EL RECORRIDO</p>
+          <h2>Seis momentos. <em>Una operación conectada.</em></h2>
+          <p>Diseñamos el recorrido a partir de tus canales, producto, volumen, ciudades y condiciones comerciales. Cada
+            etapa tiene responsables y reglas definidos antes de comenzar.</p>
+        </div>
+        <div class="journey__track" id="journeyTrack">
+          <div class="journey__progress"></div>
+          <div class="journey__steps">
+            <article class="journey-step"><b>01</b>
+              <div class="journey-icon">↗</div>
+              <h3>Vender</h3>
+              <p>Activamos los canales acordados y llevamos la demanda hacia la operación.</p>
+            </article>
+            <article class="journey-step"><b>02</b>
+              <div class="journey-icon">↓</div>
+              <h3>Recibir</h3>
+              <p>El producto ingresa, se valida y queda listo para ser administrado.</p>
+            </article>
+            <article class="journey-step"><b>03</b>
+              <div class="journey-icon">▦</div>
+              <h3>Almacenar</h3>
+              <p>El inventario se organiza por SKU, lote u otro criterio definido para la operación, con apoyo WMS
+                cuando corresponda.</p>
+            </article>
+            <article class="journey-step"><b>04</b>
+              <div class="journey-icon">□</div>
+              <h3>Preparar y despachar</h3>
+              <p>Cada pedido se convierte en una salida lista para el canal y destino correspondientes.</p>
+            </article>
+            <article class="journey-step"><b>05</b>
+              <div class="journey-icon">→</div>
+              <h3>Entregar</h3>
+              <p>Coordinamos distribución, transporte y gestión de novedades según el alcance acordado.</p>
+            </article>
+            <article class="journey-step"><b>06</b>
+              <div class="journey-icon">✓</div>
+              <h3>Facturar y recaudar</h3>
+              <p>Cerramos el ciclo con facturación, medios de pago, recaudo y conciliación.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="journey__cta reveal"><span>¿DÓNDE SE ROMPE HOY TU RECORRIDO?</span>
+          <p>Cuéntanos qué parte de la operación te está frenando y revisamos dónde puede entrar TuLogístico.</p><a
+            class="btn btn--primary" href="#contacto">Solicitar diagnóstico</a>
+        </aside>
       </div>
-      <a class="text-link reveal" href="#contacto">Revisar si hay encaje ↗</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- IMPORTADORES -->
-  <section class="section section--dark importer" id="importadores">
-    <div class="shell importer__grid">
-      <div class="reveal"><p class="eyebrow eyebrow--dark">CASO DE USO</p><h2>Tu mercancía ya está lista. <em>Ahora necesita una operación local.</em></h2><p>TuLogístico puede articular la entrada de inventario a una operación comercial y logística en Colombia: recepción, almacenamiento, canales, preparación, facturación, distribución y recaudo según el alcance acordado.</p><a href="#contacto" class="btn btn--primary">Diseñar mi operación en Colombia</a><a href="https://www.ervi.com.co/" target="_blank" rel="noopener noreferrer" class="importer__link">Conocer Ervi Importación ↗</a></div>
-      <div class="importer-visual reveal reveal--right">
-        <div class="colombia-node" aria-hidden="true"></div>
-        <svg class="import-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <path class="import-route import-route--1" d="M50 49 C50 58 42 66 31 76 C27 80 25 84 24 88"/>
-          <path class="import-route import-route--2" d="M50 49 C50 59 58 67 69 75 C74 79 77 83 78 87"/>
-          <path class="import-route import-route--3" d="M50 49 C50 61 47 70 46 79 C45 84 43 87 41 90"/>
-          <path class="import-route import-route--4" d="M50 49 C50 57 55 63 59 70 C62 76 64 83 63 90"/>
-          <path class="import-route import-route--5" d="M50 49 C50 55 39 61 34 68 C31 72 30 77 29 82"/>
-        </svg>
-        <div class="import-hub"><span></span><small>CENTRO</small></div>
-        <div class="import-dot import-dot--1"></div><div class="import-dot import-dot--2"></div><div class="import-dot import-dot--3"></div><div class="import-dot import-dot--4"></div><div class="import-dot import-dot--5"></div>
-        <div class="import-packet">INVENTARIO</div>
+    <!-- SERVICIOS -->
+    <section class="section section--paper services" id="servicios">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">SERVICIOS</p>
+          <h2>La operación se adapta a tu negocio, <em>no al revés.</em></h2>
+          <p>No todos los clientes necesitan exactamente el mismo alcance. Definimos qué debe asumir TuLogístico, qué
+            soporta el aliado logístico y qué permanece en manos del cliente.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service reveal">
+            <p class="service__num">01 / COMERCIALIZACIÓN</p>
+            <h3>E-commerce, TAT y catálogo digital</h3>
+            <p>Para ampliar el alcance comercial con una operación capaz de responder a la demanda.</p>
+            <strong>Resultado: más canales sin multiplicar la estructura al mismo ritmo.</strong>
+          </article>
+          <article class="service reveal">
+            <p class="service__num">02 / GESTIÓN LOGÍSTICA</p>
+            <h3>Del inventario al destino</h3>
+            <p>Recepción, almacenamiento, inventario, alistamiento, despacho, transporte, entrega y novedades bajo el
+              alcance acordado.</p><strong>Resultado: continuidad entre inventario, pedido y destino.</strong>
+          </article>
+          <article class="service reveal">
+            <p class="service__num">03 / FULFILLMENT ADMINISTRATIVO</p>
+            <h3>Facturación, pagos, recaudo y conciliación</h3>
+            <p>Conectados con la operación para cerrar el ciclo de la venta.</p><strong>Resultado: menos puntos de
+              transferencia al cerrar la venta.</strong>
+          </article>
+        </div>
       </div>
-    </div>
-    <div class="importer__benefits shell"><span>Presencia operativa local.</span><span>Menos infraestructura que construir desde cero.</span><span>Un recorrido conectado entre inventario y venta.</span><span>Responsabilidades y condiciones definidas antes de iniciar.</span></div>
-  </section>
+    </section>
 
-  <!-- RESPALDO -->
-  <section class="section section--paper backing" id="respaldo">
-    <div class="shell">
-      <div class="section-head reveal"><p class="eyebrow">RESPALDO OPERATIVO</p><h2>Una propuesta joven respaldada por una <em>infraestructura con trayectoria.</em></h2><p>TuLogístico lleva un año desarrollando este modelo y se apoya logísticamente en Almagrario, compañía con más de 60 años de trayectoria.</p></div>
-      <div class="backing-grid">
-        <article class="backing-card reveal"><span>01 / RED LOGÍSTICA</span><h3>8 nodos</h3><p>Bogotá, Funza, Cali, Itagüí, Bucaramanga, Barranquilla, Santa Marta y Cartagena.</p><small>La cobertura efectiva se define según origen, destino, volumen, frecuencia y servicio requerido.</small></article>
-        <article class="backing-card reveal"><span>02 / WMS</span><h3>Inventario administrado</h3><p>La operación puede utilizar el WMS de Almagrario para administrar inventario y movimientos bajo la configuración acordada.</p></article>
-        <article class="backing-card reveal"><span>03 / RESPONSABILIDADES</span><h3>Roles claros</h3><p>TuLogístico articula el modelo comercial y operativo. Almagrario aporta el respaldo logístico correspondiente. El cliente aporta producto, información y decisiones que permanezcan bajo su responsabilidad.</p></article>
+    <!-- PARA QUIÉN -->
+    <section class="section section--paper fit" id="para-quien">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">ENCAJE</p>
+          <h2>TuLogístico tiene sentido cuando crecer <em>ya exige otra operación.</em></h2>
+          <p>El mejor encaje inicial está en repuestos, accesorios, productos de retail y referencias de inventario
+            general. Otras categorías se revisan según almacenamiento, manipulación, regulación, rotación y volumen.</p>
+        </div>
+        <div class="fit-selector reveal">
+          <div class="fit-toggle"><button class="is-active" data-fit="yes">Sí encaja</button><button
+              data-fit="review">Revisar</button><button data-fit="no">No encaja</button></div>
+          <div class="fit-panel is-active" data-panel="yes">
+            <div><span>01</span>
+              <h3>Fabricas o importas producto físico.</h3>
+            </div>
+            <div><span>02</span>
+              <h3>Quieres abrir o consolidar varios canales.</h3>
+            </div>
+            <div><span>03</span>
+              <h3>Tu operación interna empieza a quedarse corta.</h3>
+            </div>
+            <div><span>04</span>
+              <h3>Inventario, pedidos, entregas y recaudo están fragmentados.</h3>
+            </div>
+            <div><span>05</span>
+              <h3>Necesitas capacidad operativa en Colombia sin construirla completa desde cero.</h3>
+            </div>
+          </div>
+          <div class="fit-panel" data-panel="review">
+            <div><span>01</span>
+              <h3>La categoría requiere validación específica.</h3>
+            </div>
+            <div><span>02</span>
+              <h3>La capacidad depende de almacenamiento, manipulación, regulación, rotación o volumen.</h3>
+            </div>
+            <div><span>03</span>
+              <h3>La cobertura debe revisarse por origen, destino y frecuencia.</h3>
+            </div>
+            <div><span>04</span>
+              <h3>La operación necesita condiciones particulares antes de definir alcance.</h3>
+            </div>
+          </div>
+          <div class="fit-panel" data-panel="no">
+            <div><span>01</span>
+              <h3>Buscas únicamente almacenamiento sin necesidad de articular la venta.</h3>
+            </div>
+            <div><span>02</span>
+              <h3>Necesitas una capacidad o categoría que todavía no haya sido validada.</h3>
+            </div>
+            <div><span>03</span>
+              <h3>Esperas cobertura automática de cualquier ciudad o ruta.</h3>
+            </div>
+            <div><span>04</span>
+              <h3>Buscas una tarifa estándar sin revisar producto, volumen y operación.</h3>
+            </div>
+          </div>
+        </div>
+        <a class="text-link reveal" href="#contacto">Revisar si hay encaje ↗</a>
       </div>
-      <p class="trust-note reveal"><strong>Más de 60 años</strong> corresponde a la trayectoria de Almagrario, no a TuLogístico.</p>
-      <div class="network reveal"><span class="node n1">BOG</span><span class="node n2">FUN</span><span class="node n3">CAL</span><span class="node n4">ITA</span><span class="node n5">BGA</span><span class="node n6">BAQ</span><span class="node n7">SMR</span><span class="node n8">CTG</span><i class="net-line l1"></i><i class="net-line l2"></i><i class="net-line l3"></i><i class="net-line l4"></i><em>REPRESENTACIÓN DE RED</em></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section class="section section--paper faq" id="faq">
-    <div class="shell faq__grid">
-      <div class="section-head reveal"><p class="eyebrow">PREGUNTAS</p><h2>Resolver objeciones, <em>no llenar espacio.</em></h2></div>
-      <div class="faq-list reveal">
-        <details><summary>¿Necesito contratar todos los servicios?</summary><p>No. El alcance se define según el problema y la operación. La propuesta puede concentrarse en comercialización, logística, fulfillment o una combinación de ellos.</p></details>
-        <details><summary>¿Qué productos tienen mejor encaje?</summary><p>Repuestos, accesorios, productos de retail y referencias de inventario general son el encaje inicial. Otras categorías se revisan según sus condiciones de almacenamiento, manipulación, regulación, rotación y volumen.</p></details>
-        <details><summary>¿Cómo funciona el modelo?</summary><p>El inventario entra a una operación coordinada donde los canales de venta se conectan con preparación, entrega, facturación y recaudo bajo las responsabilidades acordadas. En operaciones de este tipo puede aplicarse un esquema de este modelo.</p></details>
-        <details><summary>¿Cómo calculan la tarifa?</summary><p>Se consideran variables como almacenamiento, movimientos, preparación, empaque, transporte, canales, volumen y servicios administrativos. La propuesta se construye sobre la operación real.</p></details>
-        <details><summary>¿Qué cobertura tienen?</summary><p>La capacidad logística disponible incluye Bogotá, Funza, Cali, Itagüí, Bucaramanga, Barranquilla, Santa Marta y Cartagena. La ruta efectiva se valida según origen, destino, frecuencia, volumen y nivel de servicio.</p></details>
-        <details><summary>¿Qué experiencia tiene TuLogístico?</summary><p>TuLogístico lleva un año desarrollando esta propuesta. La trayectoria logística corresponde a Almagrario, que cuenta con más de 60 años de trayectoria y una infraestructura que puede respaldar la operación según alcance.</p></details>
+    <!-- IMPORTADORES -->
+    <section class="section section--dark importer" id="importadores">
+      <div class="shell importer__grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--dark">CASO DE USO</p>
+          <h2>Tu mercancía ya está lista. <em>Ahora necesita una operación local.</em></h2>
+          <p>TuLogístico puede articular la entrada de inventario a una operación comercial y logística en Colombia:
+            recepción, almacenamiento, canales, preparación, facturación, distribución y recaudo según el alcance
+            acordado.</p><a href="#contacto" class="btn btn--primary">Diseñar mi operación en Colombia</a><a
+            href="https://www.ervi.com.co/" target="_blank" rel="noopener noreferrer" class="importer__link">Conocer
+            Ervi Importación ↗</a>
+        </div>
+        <div class="importer-visual reveal reveal--right">
+          <div class="colombia-node" aria-hidden="true"></div>
+          <svg class="import-routes" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path class="import-route import-route--1" d="M50 49 C45 25 35 42 35 40" />
+            <path class="import-route import-route--2" d="M50 49 C55 40 72 44 48 25" />
+            <path class="import-route import-route--3" d="M50 49 C35 45 25 55 30 60" />
+            <path class="import-route import-route--4" d="M50 49 C60 45 65 55 68 60" />
+            <path class="import-route import-route--5" d="M50 49 C68 64 70 77 64 90" />
+          </svg>
+          <div class="import-hub"><span></span><small>CENTRO</small></div>
+          <div class="import-dot import-dot--1"></div>
+          <div class="import-dot import-dot--2"></div>
+          <div class="import-dot import-dot--3"></div>
+          <div class="import-dot import-dot--4"></div>
+          <div class="import-dot import-dot--5"></div>
+          <div class="import-packet">INVENTARIO</div>
+        </div>
       </div>
+      <div class="importer__benefits shell"><span>Presencia operativa local.</span><span>Menos infraestructura que
+          construir desde cero.</span><span>Un recorrido conectado entre inventario y
+          venta.</span><span>Responsabilidades y condiciones definidas antes de iniciar.</span></div>
+    </section>
+
+    <!-- RESPALDO -->
+    <section class="section section--paper backing" id="respaldo">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">RESPALDO OPERATIVO</p>
+          <h2>Una propuesta joven respaldada por una <em>infraestructura con trayectoria.</em></h2>
+          <p>TuLogístico lleva un año desarrollando este modelo y se apoya logísticamente en Almagrario, compañía con
+            más de 60 años de trayectoria.</p>
+        </div>
+        <div class="backing-grid">
+          <article class="backing-card reveal"><span>01 / RED LOGÍSTICA</span>
+            <h3>8 nodos</h3>
+            <p>Bogotá, Funza, Cali, Itagüí, Bucaramanga, Barranquilla, Santa Marta y Cartagena.</p><small>La cobertura
+              efectiva se define según origen, destino, volumen, frecuencia y servicio requerido.</small>
+          </article>
+          <article class="backing-card reveal"><span>02 / WMS</span>
+            <h3>Inventario administrado</h3>
+            <p>La operación puede utilizar el WMS de Almagrario para administrar inventario y movimientos bajo la
+              configuración acordada.</p>
+          </article>
+          <article class="backing-card reveal"><span>03 / RESPONSABILIDADES</span>
+            <h3>Roles claros</h3>
+            <p>TuLogístico articula el modelo comercial y operativo. Almagrario aporta el respaldo logístico
+              correspondiente. El cliente aporta producto, información y decisiones que permanezcan bajo su
+              responsabilidad.</p>
+          </article>
+        </div>
+        <p class="trust-note reveal"><strong>Más de 60 años</strong> corresponde a la trayectoria de Almagrario, no a
+          TuLogístico.</p>
+        <div class="network reveal"><span class="node n1">BOG</span><span class="node n2">FUN</span><span
+            class="node n3">CAL</span><span class="node n4">ITA</span><span class="node n5">BGA</span><span
+            class="node n6">BAQ</span><span class="node n7">SMR</span><span class="node n8">CTG</span><i
+            class="net-line l1"></i><i class="net-line l2"></i><i class="net-line l3"></i><i
+            class="net-line l4"></i><em>REPRESENTACIÓN DE RED</em></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--paper faq" id="faq">
+      <div class="shell faq__grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">PREGUNTAS</p>
+          <h2>Resolver objeciones, <em>no llenar espacio.</em></h2>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>¿Necesito contratar todos los servicios?</summary>
+            <p>No. El alcance se define según el problema y la operación. La propuesta puede concentrarse en
+              comercialización, logística, fulfillment o una combinación de ellos.</p>
+          </details>
+          <details>
+            <summary>¿Qué productos tienen mejor encaje?</summary>
+            <p>Repuestos, accesorios, productos de retail y referencias de inventario general son el encaje inicial.
+              Otras categorías se revisan según sus condiciones de almacenamiento, manipulación, regulación, rotación y
+              volumen.</p>
+          </details>
+          <details>
+            <summary>¿Cómo funciona el modelo?</summary>
+            <p>El inventario entra a una operación coordinada donde los canales de venta se conectan con preparación,
+              entrega, facturación y recaudo bajo las responsabilidades acordadas. En operaciones de este tipo puede
+              aplicarse un esquema de este modelo.</p>
+          </details>
+          <details>
+            <summary>¿Cómo calculan la tarifa?</summary>
+            <p>Se consideran variables como almacenamiento, movimientos, preparación, empaque, transporte, canales,
+              volumen y servicios administrativos. La propuesta se construye sobre la operación real.</p>
+          </details>
+          <details>
+            <summary>¿Qué cobertura tienen?</summary>
+            <p>La capacidad logística disponible incluye Bogotá, Funza, Cali, Itagüí, Bucaramanga, Barranquilla, Santa
+              Marta y Cartagena. La ruta efectiva se valida según origen, destino, frecuencia, volumen y nivel de
+              servicio.</p>
+          </details>
+          <details>
+            <summary>¿Qué experiencia tiene TuLogístico?</summary>
+            <p>TuLogístico lleva un año desarrollando esta propuesta. La trayectoria logística corresponde a Almagrario,
+              que cuenta con más de 60 años de trayectoria y una infraestructura que puede respaldar la operación según
+              alcance.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark contact" id="contacto">
+      <div class="shell contact__grid">
+        <div class="contact__intro reveal">
+          <p class="eyebrow eyebrow--dark">SIGUIENTE PASO</p>
+          <h2>Cuéntanos qué está frenando hoy <em>tu operación.</em></h2>
+          <p>Revisamos producto, canales, volumen, ciudades y principal cuello de botella. Si existe encaje, definimos
+            un alcance claro para comenzar.</p>
+        </div>
+        <form class="form reveal reveal--right" id="contactForm" novalidate>
+          <fieldset>
+            <legend>Paso 1 — Tu operación</legend>
+            <label>¿Fabricas, importas o distribuyes?<input name="tipo" required></label>
+            <label>Tipo de producto<input name="producto" required></label>
+            <label>Canales actuales<input name="canales" required></label>
+            <label>Ciudad(es)<input name="ciudades" required></label>
+            <label>Pedidos mensuales aproximados<input name="pedidos"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Paso 2 — Tu reto</legend><label>Principal cuello de botella<textarea name="cuello"
+                rows="2"></textarea></label><label>Qué quieres mejorar<textarea name="mejora"
+                rows="2"></textarea></label>
+          </fieldset>
+          <fieldset>
+            <legend>Paso 3 — Contacto</legend><label>Nombre<input name="nombre" required></label><label>Empresa<input
+                name="empresa" required></label><label>Correo corporativo<input name="correo" type="email"
+                required></label><label>Teléfono<input name="telefono"></label>
+          </fieldset>
+          <label class="consent"><input type="checkbox" required> Al enviar este formulario aceptas el tratamiento de
+            tus datos de acuerdo con nuestra política de privacidad.</label>
+          <button class="btn btn--primary btn--block" type="submit">Solicitar diagnóstico <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__top">
+      <div>
+        <div class="brand"><img src="./img/tulogistico-logo.png" alt="TuLogístico"></div>
+        <p>Comercialización, logística y fulfillment conectados de principio a fin.</p><small>Operación logística
+          apoyada por Almagrario.</small>
+      </div>
+      <nav><a href="#soluciones">Soluciones</a><a href="#como-funciona">Cómo funciona</a><a
+          href="#servicios">Servicios</a><a href="#respaldo">Respaldo</a><a href="#faq">Preguntas</a><a
+          href="#importadores">TuLogístico Importación ↗</a><a href="#contacto">Política de privacidad</a></nav>
     </div>
-  </section>
+    <div class="shell footer__bottom">© 2026 TuLogístico. Todos los derechos reservados.</div>
+  </footer>
 
-  <!-- CTA -->
-  <section class="section section--dark contact" id="contacto">
-    <div class="shell contact__grid">
-      <div class="contact__intro reveal"><p class="eyebrow eyebrow--dark">SIGUIENTE PASO</p><h2>Cuéntanos qué está frenando hoy <em>tu operación.</em></h2><p>Revisamos producto, canales, volumen, ciudades y principal cuello de botella. Si existe encaje, definimos un alcance claro para comenzar.</p></div>
-      <form class="form reveal reveal--right" id="contactForm" novalidate>
-        <fieldset><legend>Paso 1 — Tu operación</legend>
-          <label>¿Fabricas, importas o distribuyes?<input name="tipo" required></label>
-          <label>Tipo de producto<input name="producto" required></label>
-          <label>Canales actuales<input name="canales" required></label>
-          <label>Ciudad(es)<input name="ciudades" required></label>
-          <label>Pedidos mensuales aproximados<input name="pedidos"></label>
-        </fieldset>
-        <fieldset><legend>Paso 2 — Tu reto</legend><label>Principal cuello de botella<textarea name="cuello" rows="2"></textarea></label><label>Qué quieres mejorar<textarea name="mejora" rows="2"></textarea></label></fieldset>
-        <fieldset><legend>Paso 3 — Contacto</legend><label>Nombre<input name="nombre" required></label><label>Empresa<input name="empresa" required></label><label>Correo corporativo<input name="correo" type="email" required></label><label>Teléfono<input name="telefono"></label></fieldset>
-        <label class="consent"><input type="checkbox" required> Al enviar este formulario aceptas el tratamiento de tus datos de acuerdo con nuestra política de privacidad.</label>
-        <button class="btn btn--primary btn--block" type="submit">Solicitar diagnóstico <span>↗</span></button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-</main>
+  <div class="mobile-cta" id="mobileCta"><a href="#contacto">Diseñar mi operación <span>↗</span></a></div>
 
-<footer class="footer">
-  <div class="shell footer__top"><div><div class="brand"><img src="./img/tulogistico-logo.png" alt="TuLogístico"></div><p>Comercialización, logística y fulfillment conectados de principio a fin.</p><small>Operación logística apoyada por Almagrario.</small></div><nav><a href="#soluciones">Soluciones</a><a href="#como-funciona">Cómo funciona</a><a href="#servicios">Servicios</a><a href="#respaldo">Respaldo</a><a href="#faq">Preguntas</a><a href="#importadores">TuLogístico Importación ↗</a><a href="#contacto">Política de privacidad</a></nav></div>
-  <div class="shell footer__bottom">© 2026 TuLogístico. Todos los derechos reservados.</div>
-</footer>
-
-<div class="mobile-cta" id="mobileCta"><a href="#contacto">Diseñar mi operación <span>↗</span></a></div>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

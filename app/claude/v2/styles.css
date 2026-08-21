@@ -1181,12 +1181,12 @@ h3 {
 }
 
 .import-route--2 {
-    stroke: #21d7c3;
+    stroke: #d77321;
     color: #21d7c3
 }
 
 .import-route--3 {
-    stroke: #06b7a5;
+    stroke: #0051df;
     color: #06b7a5
 }
 
@@ -1196,7 +1196,7 @@ h3 {
 }
 
 .import-route--5 {
-    stroke: #18c6b2;
+    stroke: #ff00e2;
     color: #18c6b2
 }
 
@@ -1243,41 +1243,41 @@ h3 {
 }
 
 .import-dot--1 {
-    left: 42%;
-    top: 64%;
+    left: 34%;
+    top: 40%;
     background: var(--lime-bright);
     color: var(--lime-bright)
 }
 
 .import-dot--2 {
-    left: 61%;
-    top: 68%;
-    background: #21d7c3;
-    color: #21d7c3;
+    left: 47%;
+    top: 25%;
+    background: #d77321;
+    color: #d77321;
     animation-delay: .4s
 }
 
 .import-dot--3 {
-    left: 49%;
-    top: 75%;
-    background: #06b7a5;
-    color: #06b7a5;
+    left: 30%;
+    top: 60%;
+    background: #0051df;
+    color: #0051df;
     animation-delay: .8s
 }
 
 .import-dot--4 {
-    left: 56%;
-    top: 80%;
-    background: #8edc2b;
-    color: #8edc2b;
+    left: 68%;
+    top: 60%;
+    background: #599907;
+    color: #010200;
     animation-delay: 1.2s
 }
 
 .import-dot--5 {
-    left: 45%;
-    top: 72%;
-    background: #21d7c3;
-    color: #21d7c3;
+    left: 63%;
+    top: 90%;
+    background: #ff00e2;
+    color: #ff00e2;
     animation-delay: 1.6s
 }
 
@@ -1417,7 +1417,7 @@ h3 {
     height: 44px;
     border-radius: 50%;
     background: var(--navy-2);
-    color: #fff;
+    color: #00268f;
     display: grid;
     place-items: center;
     font: 600 .55rem var(--mono);
@@ -2001,8 +2001,8 @@ details p {
 }
 
 .network .node {
-    background: var(--navy);
-    box-shadow: 0 0 0 7px rgba(176, 222, 9, .10)
+    background: var(--lime);
+    box-shadow: 0 0 0 12px rgba(176, 222, 9, .10)
 }
 
 .importer__benefits span {
