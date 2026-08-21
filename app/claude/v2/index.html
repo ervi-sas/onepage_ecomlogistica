@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TuLogístico | Comercialización, logística y recaudo conectados</title>
   <meta name="description"
-    content="Conecta canales de venta, inventario, distribución, facturación y recaudo con una operación respaldada logísticamente por Almagrario.">
+    content="Conecta canales de venta, inventario, distribución, facturación y recaudo con una operación respaldada por una infraestructura logística propia.">
   <meta property="og:title" content="Del producto listo a una operación que fluye.">
   <meta property="og:description"
     content="Comercialización, logística y fulfillment conectados para fabricantes, importadores y negocios multicanal.">
@@ -52,41 +52,49 @@
         <path d="M-50 610 C210 500 360 320 620 330 S920 690 1250 500" class="route route--2" />
         <path d="M-50 760 C240 740 430 480 690 490 S980 260 1250 220" class="route route--3" />
       </svg>
-      <div class="shell hero__grid">
+
+      <div class="shell hero__content">
         <div class="hero__copy reveal">
           <p class="eyebrow eyebrow--dark"><span></span>COMERCIALIZACIÓN · LOGÍSTICA · FULFILLMENT</p>
           <h1>Tu producto está listo. <em>Hagamos que toda la operación también.</em></h1>
-          <p class="hero__lead">TuLogístico conecta venta, inventario, preparación, entrega, facturación y recaudo en
-            una operación diseñada alrededor de tu negocio. Tú defines el producto y el crecimiento que buscas; nosotros
-            articulamos el recorrido.</p>
-          <div class="hero__ctas">
-            <a href="#contacto" class="btn btn--primary">Diseñar mi operación <span>↗</span></a>
-            <a href="#como-funciona" class="btn btn--ghost">Ver cómo funciona</a>
-          </div>
-          <p class="proof">Respaldo logístico de Almagrario · +60 años de trayectoria del aliado · 8 ciudades
-            disponibles según operación</p>
-          <p class="attribution">La trayectoria y la infraestructura logística corresponden a Almagrario. TuLogístico
-            desarrolla y articula el modelo comercial y operativo.</p>
+          <p>Operamos toda tu logística a partir de los canales definidos, producto, volumen, ciudades, condiciones
+            comerciales. Ej.: Tienda a Tienda (TAT), e-commerce, en estrategias B2C y B2B.</p>
         </div>
-
-        <div class="hero-visual reveal reveal--right" aria-label="Representación animada de una operación conectada">
-          <div class="visual-label">REPRESENTACIÓN · NO SON MÉTRICAS REALES</div>
-          <div class="flow-card">
-            <div class="flow-card__top"><span>OPERACIÓN EN CURSO</span><b>●</b></div>
-            <div class="flow-stage">
-              <div class="package"><span></span></div>
-              <div class="node node--sale"><i></i><span>VENTA</span></div>
-              <div class="node node--stock"><i></i><span>INVENTARIO</span></div>
-              <div class="node node--ship"><i></i><span>DESPACHO</span></div>
-              <div class="node node--pay"><i></i><span>RECAUDO</span></div>
-              <div class="flow-line line--a"></div>
-              <div class="flow-line line--b"></div>
-              <div class="flow-line line--c"></div>
-              <div class="spark spark--1"></div>
-              <div class="spark spark--2"></div>
-              <div class="spark spark--3"></div>
-            </div>
-            <div class="flow-status"><span>Pedido ERV-0284</span><strong>EN RECORRIDO</strong></div>
+        <div class="journey__track" id="journeyTrack">
+          <span class="journey-anchor" id="como-funciona" aria-hidden="true"></span>
+          <div class="journey__progress"></div>
+          <div class="journey__steps">
+            <article class="journey-step"><b>01</b>
+              <div class="journey-icon">↗</div>
+              <h3>Vender</h3>
+              <p>Activamos los canales acordados y llevamos la demanda hacia la operación.</p>
+            </article>
+            <article class="journey-step"><b>02</b>
+              <div class="journey-icon">↓</div>
+              <h3>Recibir</h3>
+              <p>El producto ingresa, se valida y queda listo para ser administrado.</p>
+            </article>
+            <article class="journey-step"><b>03</b>
+              <div class="journey-icon">▦</div>
+              <h3>Almacenar</h3>
+              <p>El inventario se organiza por SKU, lote u otro criterio definido para la operación, con apoyo WMS
+                cuando corresponda.</p>
+            </article>
+            <article class="journey-step"><b>04</b>
+              <div class="journey-icon">□</div>
+              <h3>Preparar y despachar</h3>
+              <p>Cada pedido se convierte en una salida lista para el canal y destino correspondientes.</p>
+            </article>
+            <article class="journey-step"><b>05</b>
+              <div class="journey-icon">→</div>
+              <h3>Entregar</h3>
+              <p>Coordinamos distribución, transporte y gestión de novedades según el alcance acordado.</p>
+            </article>
+            <article class="journey-step"><b>06</b>
+              <div class="journey-icon">✓</div>
+              <h3>Facturar y recaudar</h3>
+              <p>Cerramos el ciclo con facturación, medios de pago, recaudo y conciliación.</p>
+            </article>
           </div>
         </div>
       </div>
@@ -158,7 +166,7 @@
             <div>
               <h3>Logística</h3><strong>Hacemos que el pedido encuentre su camino.</strong>
               <p>Recepción, almacenamiento, control de inventario, alistamiento, despacho, distribución y gestión de
-                novedades, con apoyo logístico de Almagrario según el alcance definido.</p><small>Recepción ·
+                novedades, con infraestructura logística propia según el alcance definido.</p><small>Recepción ·
                 Almacenamiento · Inventario · Alistamiento · Despacho · Distribución · Entregas · Apoyo WMS</small>
             </div>
           </article>
@@ -174,66 +182,14 @@
       </div>
     </section>
 
-    <!-- CÓMO FUNCIONA -->
-    <section class="section section--dark journey" id="como-funciona">
-      <div class="shell">
-        <div class="journey__intro reveal">
-          <p class="eyebrow eyebrow--dark">EL RECORRIDO</p>
-          <h2>Seis momentos. <em>Una operación conectada.</em></h2>
-          <p>Diseñamos el recorrido a partir de tus canales, producto, volumen, ciudades y condiciones comerciales. Cada
-            etapa tiene responsables y reglas definidos antes de comenzar.</p>
-        </div>
-        <div class="journey__track" id="journeyTrack">
-          <div class="journey__progress"></div>
-          <div class="journey__steps">
-            <article class="journey-step"><b>01</b>
-              <div class="journey-icon">↗</div>
-              <h3>Vender</h3>
-              <p>Activamos los canales acordados y llevamos la demanda hacia la operación.</p>
-            </article>
-            <article class="journey-step"><b>02</b>
-              <div class="journey-icon">↓</div>
-              <h3>Recibir</h3>
-              <p>El producto ingresa, se valida y queda listo para ser administrado.</p>
-            </article>
-            <article class="journey-step"><b>03</b>
-              <div class="journey-icon">▦</div>
-              <h3>Almacenar</h3>
-              <p>El inventario se organiza por SKU, lote u otro criterio definido para la operación, con apoyo WMS
-                cuando corresponda.</p>
-            </article>
-            <article class="journey-step"><b>04</b>
-              <div class="journey-icon">□</div>
-              <h3>Preparar y despachar</h3>
-              <p>Cada pedido se convierte en una salida lista para el canal y destino correspondientes.</p>
-            </article>
-            <article class="journey-step"><b>05</b>
-              <div class="journey-icon">→</div>
-              <h3>Entregar</h3>
-              <p>Coordinamos distribución, transporte y gestión de novedades según el alcance acordado.</p>
-            </article>
-            <article class="journey-step"><b>06</b>
-              <div class="journey-icon">✓</div>
-              <h3>Facturar y recaudar</h3>
-              <p>Cerramos el ciclo con facturación, medios de pago, recaudo y conciliación.</p>
-            </article>
-          </div>
-        </div>
-        <aside class="journey__cta reveal"><span>¿DÓNDE SE ROMPE HOY TU RECORRIDO?</span>
-          <p>Cuéntanos qué parte de la operación te está frenando y revisamos dónde puede entrar TuLogístico.</p><a
-            class="btn btn--primary" href="#contacto">Solicitar diagnóstico</a>
-        </aside>
-      </div>
-    </section>
-
     <!-- SERVICIOS -->
     <section class="section section--paper services" id="servicios">
       <div class="shell">
         <div class="section-head reveal">
           <p class="eyebrow">SERVICIOS</p>
           <h2>La operación se adapta a tu negocio, <em>no al revés.</em></h2>
-          <p>No todos los clientes necesitan exactamente el mismo alcance. Definimos qué debe asumir TuLogístico, qué
-            soporta el aliado logístico y qué permanece en manos del cliente.</p>
+          <p>No todos los clientes necesitan exactamente el mismo alcance. Definimos qué debe asumir cada frente de
+            TuLogístico y qué permanece en manos del cliente.</p>
         </div>
         <div class="services-grid">
           <article class="service reveal">
@@ -361,8 +317,8 @@
         <div class="section-head reveal">
           <p class="eyebrow">RESPALDO OPERATIVO</p>
           <h2>Una propuesta joven respaldada por una <em>infraestructura con trayectoria.</em></h2>
-          <p>TuLogístico lleva un año desarrollando este modelo y se apoya logísticamente en Almagrario, compañía con
-            más de 60 años de trayectoria.</p>
+          <p>TuLogístico desarrolla este modelo con infraestructura logística propia y más de 60 años de trayectoria.
+          </p>
         </div>
         <div class="backing-grid">
           <article class="backing-card reveal"><span>01 / RED LOGÍSTICA</span>
@@ -372,18 +328,17 @@
           </article>
           <article class="backing-card reveal"><span>02 / WMS</span>
             <h3>Inventario administrado</h3>
-            <p>La operación puede utilizar el WMS de Almagrario para administrar inventario y movimientos bajo la
-              configuración acordada.</p>
+            <p>Nuestro WMS administra inventario y movimientos bajo la configuración acordada.</p>
           </article>
           <article class="backing-card reveal"><span>03 / RESPONSABILIDADES</span>
             <h3>Roles claros</h3>
-            <p>TuLogístico articula el modelo comercial y operativo. Almagrario aporta el respaldo logístico
-              correspondiente. El cliente aporta producto, información y decisiones que permanezcan bajo su
+            <p>TuLogístico articula el modelo comercial y operativo con infraestructura y operación logística propias.
+              El cliente aporta producto, información y decisiones que permanezcan bajo su
               responsabilidad.</p>
           </article>
         </div>
-        <p class="trust-note reveal"><strong>Más de 60 años</strong> corresponde a la trayectoria de Almagrario, no a
-          TuLogístico.</p>
+        <p class="trust-note reveal"><strong>Más de 60 años</strong> de trayectoria respaldan la infraestructura y
+          operación de TuLogístico.</p>
         <div class="network reveal"><span class="node n1">BOG</span><span class="node n2">FUN</span><span
             class="node n3">CAL</span><span class="node n4">ITA</span><span class="node n5">BGA</span><span
             class="node n6">BAQ</span><span class="node n7">SMR</span><span class="node n8">CTG</span><i
@@ -430,9 +385,8 @@
           </details>
           <details>
             <summary>¿Qué experiencia tiene TuLogístico?</summary>
-            <p>TuLogístico lleva un año desarrollando esta propuesta. La trayectoria logística corresponde a Almagrario,
-              que cuenta con más de 60 años de trayectoria y una infraestructura que puede respaldar la operación según
-              alcance.</p>
+            <p>TuLogístico lleva un año desarrollando esta propuesta. TuLogístico cuenta con más de 60 años de
+              trayectoria e infraestructura para respaldar la operación según alcance.</p>
           </details>
         </div>
       </div>
@@ -449,22 +403,11 @@
         </div>
         <form class="form reveal reveal--right" id="contactForm" novalidate>
           <fieldset>
-            <legend>Paso 1 — Tu operación</legend>
-            <label>¿Fabricas, importas o distribuyes?<input name="tipo" required></label>
-            <label>Tipo de producto<input name="producto" required></label>
-            <label>Canales actuales<input name="canales" required></label>
-            <label>Ciudad(es)<input name="ciudades" required></label>
-            <label>Pedidos mensuales aproximados<input name="pedidos"></label>
-          </fieldset>
-          <fieldset>
-            <legend>Paso 2 — Tu reto</legend><label>Principal cuello de botella<textarea name="cuello"
-                rows="2"></textarea></label><label>Qué quieres mejorar<textarea name="mejora"
-                rows="2"></textarea></label>
-          </fieldset>
-          <fieldset>
-            <legend>Paso 3 — Contacto</legend><label>Nombre<input name="nombre" required></label><label>Empresa<input
-                name="empresa" required></label><label>Correo corporativo<input name="correo" type="email"
-                required></label><label>Teléfono<input name="telefono"></label>
+            <legend>Contacto</legend>
+            <label>Nombre<input name="nombre" required></label>
+            <label>Empresa<input name="empresa" required></label>
+            <label>Correo corporativo<input name="correo" type="email" required></label>
+            <label>Teléfono<input name="telefono"></label>
           </fieldset>
           <label class="consent"><input type="checkbox" required> Al enviar este formulario aceptas el tratamiento de
             tus datos de acuerdo con nuestra política de privacidad.</label>
@@ -480,7 +423,7 @@
       <div>
         <div class="brand"><img src="./img/tulogistico-logo.png" alt="TuLogístico"></div>
         <p>Comercialización, logística y fulfillment conectados de principio a fin.</p><small>Operación logística
-          apoyada por Almagrario.</small>
+          apoyada por TuLogístico.</small>
       </div>
       <nav><a href="#soluciones">Soluciones</a><a href="#como-funciona">Cómo funciona</a><a
           href="#servicios">Servicios</a><a href="#respaldo">Respaldo</a><a href="#faq">Preguntas</a><a

@@ -761,7 +761,7 @@ h3 {
 
 .journey__progress {
     height: 3px;
-    background: linear-gradient(90deg, var(--lime), var(--lime-bright) 38%, var(--teal) 78%, #21d7c3);
+    background: linear-gradient(90deg, var(--lime), var(--lime-bright) 40%, var(--teal) 0%, #21d7c3);
     position: absolute;
     left: 0;
     top: 28px;
@@ -780,7 +780,7 @@ h3 {
     height: 9px;
     border-radius: 50%;
     background: var(--lime-bright);
-    transform: translateY(-50%);
+    transform: translateY(-20%);
     box-shadow: 0 0 18px var(--lime-bright)
 }
 
@@ -845,23 +845,6 @@ h3 {
 .journey-step p {
     font-size: .8rem;
     color: rgba(255, 255, 255, .58)
-}
-
-.journey__cta {
-    margin: 70px 0 0 auto;
-    max-width: 450px;
-    padding: 25px;
-    border: 1px solid rgba(255, 255, 255, .13);
-    background: rgba(255, 255, 255, .035)
-}
-
-.journey__cta span {
-    font: 600 .65rem var(--mono);
-    color: var(--lime-bright)
-}
-
-.journey__cta p {
-    color: rgba(255, 255, 255, .65)
 }
 
 .services-grid {
@@ -1408,7 +1391,8 @@ h3 {
     position: relative;
     background: #000000 url("./img/colombia-network-map.png") center -2em/ 150% 170% no-repeat;
     border: 1px solid rgba(19, 36, 54, .1);
-    overflow: hidden
+    overflow: hidden;
+    box-shadow: 15px 19px 40px rgba(39, 47, 71, 0.4);
 }
 
 .network .node {
@@ -2059,4 +2043,59 @@ details p {
 .service,
 .backing-card {
     background: #fff
+}
+
+/* --- Hero simplificado: portada + recorrido --- */
+.hero__content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero__copy {
+    width: 100%;
+    max-width: 1180px;
+}
+
+.hero__copy h1 {
+    max-width: none;
+    width: 100%;
+}
+
+.hero .journey__intro {
+    margin-top: clamp(70px, 9vw, 120px);
+}
+
+.hero .journey__track {
+    margin-top: 60px;
+}
+
+
+.journey-anchor {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+
+    .hero .journey__steps {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero .journey__steps {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .hero .journey-step:after {
+        display: none;
+    }
 }
